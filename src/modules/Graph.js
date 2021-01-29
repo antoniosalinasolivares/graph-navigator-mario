@@ -59,5 +59,3 @@ const Graph = (graph) => {
 }
 
 module.exports = Graph
-
-

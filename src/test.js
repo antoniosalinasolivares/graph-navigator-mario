@@ -1,6 +1,10 @@
+const world1_1 = require('./world11.json')
 const Graph = require('./modules/Graph')
+const gr = Graph(world1_1)
+console.log(world1_1)
 
-const gr = Graph({
+
+const gr2 = Graph({
         'A':{
             'D':1,
             'B':6
@@ -28,4 +32,6 @@ const gr = Graph({
     })
 
 
-console.log(gr.Dijkstra('A', 'C'))
+
+//console.log(gr2.Dijkstra('A', 'E'))
+//console.log(gr.Dijkstra('Start', 'N1'))
