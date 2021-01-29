@@ -58,4 +58,5 @@ const Graph = (graph) => {
     }
 }
 
-module.exports = Graph
+
+export default Graph
