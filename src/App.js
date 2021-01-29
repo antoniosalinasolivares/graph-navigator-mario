@@ -1,4 +1,4 @@
-import { useState , useEffect} from 'react';
+import { useState } from 'react';
 import map from './map.jpeg'
 import world11 from './world11.json'
 import './uistyles.css'
@@ -21,69 +21,69 @@ const algo = Graph(world11)
 			<div className="button-container" style={{
 				position: 'relative'
 			}}>
-				<img src={map} style={{}}/ >
+				<img src={map} alt="Super mario 3 world 1"/ >
 
-				<a onClick={()=>{
+				<button onClick={()=>{
 					setDestiny('Start')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(38,67)}>Start</a>
-				<a onClick={()=>{
+				}} style={locate(38,67)}>Start</button>
+				<button onClick={()=>{
 					setDestiny('N1')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(49,59)}>N1</a>
-				<a onClick={()=>{
+				}} style={locate(49,59)}>N1</button>
+				<button onClick={()=>{
 					setDestiny('N2')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(49,37.5)}>N2</a>
-				<a onClick={()=>{
+				}} style={locate(49,37.5)}>N2</button>
+				<button onClick={()=>{
 					setDestiny('N3')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(49,27)}>N3</a>
-				<a onClick={()=>{
+				}} style={locate(49,27)}>N3</button>
+				<button onClick={()=>{
 					setDestiny('N4')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(38,27)}>N4</a>
-				<a onClick={()=>{
+				}} style={locate(38,27)}>N4</button>
+				<button onClick={()=>{
 					setDestiny('Champi')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(38,15)}>Ch1</a>
-				<a onClick={()=>{
+				}} style={locate(38,15)}>Ch1</button>
+				<button onClick={()=>{
 					setDestiny('Castillo')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(26,45)}>Castillo</a>
-				<a onClick={()=>{
+				}} style={locate(26,45)}>Castillo</button>
+				<button onClick={()=>{
 					setDestiny('Diamante')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(26,35)}>Diamante</a>
-				<a onClick={()=>{
+				}} style={locate(26,35)}>Diamante</button>
+				<button onClick={()=>{
 					setDestiny('N5')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(6.5,59)}>N5</a>
-				<a onClick={()=>{
+				}} style={locate(6.5,59)}>N5</button>
+				<button onClick={()=>{
 					setDestiny('N6')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(6.5,37.5)}>N6</a>
-				<a onClick={()=>{
+				}} style={locate(6.5,37.5)}>N6</button>
+				<button onClick={()=>{
 					setDestiny('Champi')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(17,47)}>Ch2</a>
-				<a onClick={()=>{
+				}} style={locate(17,47)}>Ch2</button>
+				<button onClick={()=>{
 					setDestiny('Bowser')
 					setRoute(algo.Dijkstra('Start', destiny))
-				}} style={locate(17,13.5)}>Bowser</a>
+				}} style={locate(17,13.5)}>Bowser</button>
 			</div>
 		</div>
 
 		<div className="btn-group" role="group" aria-label="Basic example">
-
+			<>
 			{
-				route.forEach(element=>{
+				[...route].map(element=>{
 					return(
 						<button type="button" className="btn btn-primary">{element}</button>
 					)
 				})
 			}
-		<>{route}</>
+			</>
 		</div>
 	  </>
   )

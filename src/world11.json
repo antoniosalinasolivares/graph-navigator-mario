@@ -1,58 +1,57 @@
 {
 	"Start":{
-		"N1":2,
-		"Castillo":3
+		"N1":1
 	},
 	"N1":{
-		"Start":2,
 		"N2":5,
-		"Castillo":12
+		"Start":3
 	},
 	"N2":{
-		"N1":5,
-		"N3":7,
-		"Castillo":4
+		"N1":2,
+		"N3":8,
+		"Diamante":6
 	},
 	"N3":{
-		"N2":7,
-		"N4":10,
-		"Champi":6
+		"N2":4,
+		"N4":12,
+		"CH1":2
 	},
 	"N4":{
-		"N3":10,
-		"Champi":8,
-		"Diamante":9
+		"N3":7,
+		"CH1":1,
+		"Diamante":5
 	},
 	"N5":{
-		"N6":16,
-		"Castillo":15
+		"N6":15,
+		"Castillo":9
 	},
 	"N6":{
-		"N5":16,
-		"Bowser":11,
-		"Diamante":10
-	},
-	"Champi":{
-		"N3":6,
-		"N4":8,
-		"Bowser":12
-	},
-	"Diamante":{
-		"N4":9,
-		"N6":10,
-		"Castillo":1,
+		"N5":13,
+		"CH2":4,
 		"Bowser":20
 	},
-	"Castillo":{
-		"N1":12,
+	"CH1":{
+		"N3":3,
+		"N4":5
+	},
+	"CH2":{
+		"N6":2,
+		"Bowser":3
+	},
+	"Diamante":{
 		"N2":4,
-		"N5":15,
-		"Start":3,
-		"Diamante":1
+		"N4":2,
+		"Castillo":1
+	},
+	"Castillo":{
+		"N5":10,
+		"Diamante":2
 	},
 	"Bowser":{
-		"N6":11,
-		"Champi":12,
-		"Diamante":20
+		"N6":17,
+		"CH2":4
 	}
 }
+
+
+		
