@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/graph-navigator-mario/static/css/main.4f8bae39.chunk.css",
+    "main.js": "/graph-navigator-mario/static/js/main.6a8f36cd.chunk.js",
+    "main.js.map": "/graph-navigator-mario/static/js/main.6a8f36cd.chunk.js.map",
+    "runtime-main.js": "/graph-navigator-mario/static/js/runtime-main.2af43f61.js",
+    "runtime-main.js.map": "/graph-navigator-mario/static/js/runtime-main.2af43f61.js.map",
+    "static/css/2.658248ec.chunk.css": "/graph-navigator-mario/static/css/2.658248ec.chunk.css",
+    "static/js/2.11169cd4.chunk.js": "/graph-navigator-mario/static/js/2.11169cd4.chunk.js",
+    "static/js/2.11169cd4.chunk.js.map": "/graph-navigator-mario/static/js/2.11169cd4.chunk.js.map",
+    "index.html": "/graph-navigator-mario/index.html",
+    "static/css/2.658248ec.chunk.css.map": "/graph-navigator-mario/static/css/2.658248ec.chunk.css.map",
+    "static/css/main.4f8bae39.chunk.css.map": "/graph-navigator-mario/static/css/main.4f8bae39.chunk.css.map",
+    "static/js/2.11169cd4.chunk.js.LICENSE.txt": "/graph-navigator-mario/static/js/2.11169cd4.chunk.js.LICENSE.txt",
+    "static/media/map.86044075.jpeg": "/graph-navigator-mario/static/media/map.86044075.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2af43f61.js",
+    "static/css/2.658248ec.chunk.css",
+    "static/js/2.11169cd4.chunk.js",
+    "static/css/main.4f8bae39.chunk.css",
+    "static/js/main.6a8f36cd.chunk.js"
+  ]
+}
