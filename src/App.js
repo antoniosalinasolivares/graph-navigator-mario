@@ -1,40 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef, useState } from 'react';
+import map from './map.jpeg'
 
 function App() {
-  return (
-	  <div>
-		<h1>Proyecto Estructuras Discretas</h1>
 
-		<div style="text-align: center;">
+const button1 = useRef()
 
-		<div id='wrapper'>
+	return (
+	  <>
+		<nav class="navbar navbar-dark bg-dark">
+			<div class="container-fluid">
+			<span class="navbar-brand mb-0 h1">Navegacion de Grafos con Dijkstra</span>
+			</div>
+		</nav>
+		<div style={{
+			position: 'relative'
+		}}>
+			<img src={map} style={{
+				'display': 'block',
+				'width': 'auto',
+				'height': 'auto',
+				'max-width': '100%',
+				'max-height': '90%',
+				'margin': '20px auto',
+				position:'relative'
+			}}>
 
-			<input id="boton1" class="boton" type="button" value="Nivel: 1" />
 
-			<input id="boton2" class="boton" type="button" value="Nivel: 2" />
+			</img>
 
-			<input id="boton3" class="boton" type="button" value="Nivel: 3" />
-
-			<input id="boton4" class="boton" type="button" value="Nivel: 4" />
-
-			<input id="boton5" class="boton" type="button" value="Champi" />
-
-			<input id="boton6" class="boton" type="button" value="Castillo " />
-
-			<input id="boton7" class="boton" type="button" value="Diamante" />
-
-			<input id="boton8" class="boton" type="button" value="Bowser " />
-
-			<input id="boton9" class="boton" type="button" value="Nivel: 5" />
-
-			<input id="boton10" class="boton" type="button" value="Nivel: 6" />
-
-			<input id="boton11" class="boton" type="button" value="Start" />
-
+			<button style={{
+				position: 'fixed',
+				top:'100px',
+				left: '200px' 
+			}}>this is a fucking button</ button>
+			
 		</div>
-	</div>
-	</div>
+
+	  </>
   )
 }
 

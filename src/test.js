@@ -28,4 +28,4 @@ const gr = Graph({
     })
 
 
-console.log(gr.Dijkstra('A'))
+console.log(gr.Dijkstra('A', 'C'))
