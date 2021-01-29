@@ -1,18 +1,31 @@
 const Graph = require('./modules/Graph')
 
 const gr = Graph({
-        'A': {
-            'B': 13,
-            'C': 1
+        'A':{
+            'D':1,
+            'B':6
         },
-        'B': {
-            'A': 3,
-            'C': 6,
+        'B':{
+            'A':6,
+            'D':2,
+            'E':2,
+            'C':5
         },
         'C':{
-            'A': 5,
-            'B': 6,
+            'B':5,
+            'E':5
+        },
+        'D':{
+            'A':1,
+            'B':2,
+            'E':1
+        },
+        'E':{
+            'D':1,
+            'B':2,
+            'C':5
         }
     })
 
-    console.log(gr.nodes)
+
+console.log(gr.Dijkstra('A'))
