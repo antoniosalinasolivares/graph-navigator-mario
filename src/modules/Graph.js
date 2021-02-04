@@ -34,7 +34,6 @@ const Graph = (graph) => {
 
         })
 
-
         //usamos la tabla de backtrack para obtener la ruta mas corta hacia el origen y la regresamos inversa
         if(distancia == 0){
            const bt = (_inicio, _final) => {
@@ -57,6 +56,5 @@ const Graph = (graph) => {
         Dijkstra
     }
 }
-
 
 export default Graph
